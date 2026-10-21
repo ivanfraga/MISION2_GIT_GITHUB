@@ -27,9 +27,18 @@ python -m unittest discover -s tests -v
 Salida esperada: `Ran 2 tests ... OK`
 
 ## Estructura
-- `src/predictor.py`: entrenamiento mínimo y predicción.
-- `src/metricas.py`: funciones auxiliares para ampliar.
-- `tests/`: pruebas de partida.
+```text
+proyecto_ia/
+├── .gitignore          # excluye .venv/, __pycache__/, .env y datos privados
+├── README.md           # esta documentación
+├── requirements.txt    # dependencias (scikit-learn)
+├── src/
+│   ├── __init__.py
+│   ├── predictor.py    # entrenamiento mínimo (árbol de decisión) y predicción
+│   └── metricas.py     # funciones de evaluación
+└── tests/
+    └── test_metricas.py  # pruebas de contar_aciertos
+```
 
 ## Colaboración
 Usad ramas `feature/*`, Pull Requests y revisiones de compañeros.
