@@ -15,6 +15,9 @@ class TestPredictor(unittest.TestCase):
         self.assertIn(predicho, (0, 1, 2))
         self.assertIn(real, (0, 1, 2))
 
+    def test_entrenamiento_es_reproducible(self):
+        self.assertEqual(predecir_ejemplo(), predecir_ejemplo())
+
 
 if __name__ == "__main__":
     unittest.main()
