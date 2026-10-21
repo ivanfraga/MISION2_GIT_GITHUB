@@ -42,3 +42,20 @@ proyecto_ia/
 
 ## Colaboración
 Usad ramas `feature/*`, Pull Requests y revisiones de compañeros.
+
+## Flujo de trabajo con Git
+1. Partir de `main` actualizado: `git switch main && git pull --ff-only origin main`.
+2. Crear una rama por tarea: `git switch -c feature/nombre-tarea`.
+3. Hacer commits pequeños con mensajes descriptivos (`feat:`, `docs:`, `test:`).
+4. Subir la rama: `git push -u origin feature/nombre-tarea`.
+5. Abrir un Pull Request con descripción y evidencia de pruebas.
+6. Integrar en `main` solo tras la revisión de otra persona.
+
+## Comandos útiles
+| Tarea | Comando |
+|---|---|
+| Ver estado | `git status` |
+| Ver historial | `git log --oneline --graph --all` |
+| Ver cambios | `git diff` |
+| Ejecutar el proyecto | `python -m src.predictor` |
+| Ejecutar tests | `python -m unittest discover -s tests -v` |
