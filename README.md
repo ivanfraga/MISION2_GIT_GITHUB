@@ -1,5 +1,4 @@
-# Proyecto IA — Clasificador de flores Iris
-Prototipo de clasificación con el dataset Iris integrado en scikit-learn. Se utiliza para practicar Git/GitHub, no para evaluar calidad predictiva.
+# Proyecto IA — Clasificador de flores Iris con aprendizaje automático
 
 ## Requisitos
 - Python 3.10 o superior
