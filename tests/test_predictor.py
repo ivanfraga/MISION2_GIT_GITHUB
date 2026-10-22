@@ -8,6 +8,9 @@ class TestPredictor(unittest.TestCase):
         self.assertEqual(len(x_test), len(y_test))
         self.assertGreater(len(x_test), 0)
 
+        self.assertTrue(hasattr(modelo, "classes_")) 
+        self.assertEqual(modelo.classes_.tolist(), [0, 1, 2])
+
     def test_predecir_ejemplo_devuelve_enteros_validos(self):
         predicho, real = predecir_ejemplo()
         self.assertIsInstance(predicho, int)
